@@ -14,6 +14,7 @@ userRoutes.route('/lookup').get(function(req, res) {
 		// This will return all records
 		//
 		// JS injection is also possible here, because the where clause evaluates a JS expression
+		// not demonstrated for today
 		console.log("Mongo query: " + JSON.stringify(query));
 		User.find(query, function (err, users) {
 			if (err) {
